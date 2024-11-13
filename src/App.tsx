@@ -1,9 +1,10 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react'
+import './styles/global.css'
 
-const News = React.lazy(() => import("news/News"));
+const News = React.lazy(() => import('news/News'))
 // const Ads = React.lazy(() => import("ads/Ads"));
 // const Sponsors = React.lazy(() => import("sponsors/Sponsors"));
-const Weather = React.lazy(() => import("weather/Weather"));
+// const Weather = React.lazy(() => import('weather/Weather'))
 
 const App: React.FC = () => {
   return (
@@ -21,11 +22,9 @@ const App: React.FC = () => {
         <Ads />
       </Suspense> */}
 
-      <Suspense fallback={<div>Loading...</div>}>
-        <Weather />
-      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>{/* <Weather /> */}</Suspense>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

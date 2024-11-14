@@ -384,7 +384,7 @@
       "responses": [
         {
           "uuid": "9ba001f5-1198-49a8-8c8e-656dacb734c6",
-          "body": "{\n  \"id\": 1,\n  \"title\": \"Guarda-chuva Compacto\",\n  \"description\": \"Não se molhe mais com nosso guarda-chuva compacto e resistente.\",\n  \"image\": \"https://example.com/images/umbrella-ad.png\",\n  \"url\": \"https://www.store.com/umbrella\"\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"title\": \"Guarda-chuva Compacto\",\n    \"description\": \"Não se molhe mais com nosso guarda-chuva compacto e resistente.\",\n    \"image\": \"https://example.com/images/umbrella-ad.png\",\n    \"url\": \"https://www.store.com/umbrella\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -411,7 +411,7 @@
         },
         {
           "uuid": "4af60a51-e911-4224-88ca-038ae158bd96",
-          "body": "{\n  \"id\": 2,\n  \"title\": \"Protetor Solar Ultra\",\n  \"description\": \"Proteja sua pele enquanto aproveita o sol com nosso protetor solar de alta proteção.\",\n  \"image\": \"https://example.com/images/sunscreen-ad.png\",\n  \"url\": \"https://www.store.com/sunscreen\"\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 2,\n    \"title\": \"Protetor Solar Ultra\",\n    \"description\": \"Proteja sua pele enquanto aproveita o sol com nosso protetor solar de alta proteção.\",\n    \"image\": \"https://example.com/images/sunscreen-ad.png\",\n    \"url\": \"https://www.store.com/sunscreen\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -438,7 +438,7 @@
         },
         {
           "uuid": "e7bf8baf-ea2d-4639-ac22-21036faff2ec",
-          "body": "{\n  \"id\": 3,\n  \"title\": \"Camisetas Comfort\",\n  \"description\": \"Perfeitas para um dia nublado, nossas camisetas confortáveis são ideais para qualquer ocasião.\",\n  \"image\": \"https://example.com/images/t-shirt-ad.png\",\n  \"url\": \"https://www.store.com/t-shirt\"\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 3,\n    \"title\": \"Camisetas Comfort\",\n    \"description\": \"Perfeitas para um dia nublado, nossas camisetas confortáveis são ideais para qualquer ocasião.\",\n    \"image\": \"https://example.com/images/t-shirt-ad.png\",\n    \"url\": \"https://www.store.com/t-shirt\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -475,7 +475,7 @@
       "responses": [
         {
           "uuid": "b4f81a2f-27ad-419f-bd4c-f6f49e7d9aa7",
-          "body": "{\n  \"temperature\": {\n    \"max\": 18,\n    \"min\": 12\n  },\n  \"probabilityOfRain\": 60,\n  \"morning\": {\n    \"climate\": \"sunny\"\n  },\n  \"afternoon\": {\n    \"climate\": \"cloudy\"\n  },\n  \"night\": {\n    \"climate\": \"rainy\"\n  },\n  \"averageClimate\": \"cloudy\"\n}",
+          "body": "{\n  \"data\": {\n    \"temperature\": {\n      \"max\": 18,\n      \"min\": 12\n    },\n    \"probabilityOfRain\": 60,\n    \"morning\": {\n      \"climate\": \"sunny\"\n    },\n    \"afternoon\": {\n      \"climate\": \"cloudy\"\n    },\n    \"night\": {\n      \"climate\": \"rainy\"\n    },\n    \"averageClimate\": \"cloudy\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -494,7 +494,7 @@
         },
         {
           "uuid": "ee105253-1616-4266-908b-6b73d7146521",
-          "body": "{\n  \"temperature\": {\n    \"max\": 35,\n    \"min\": 25\n  },\n  \"probabilityOfRain\": 10,\n  \"morning\": {\n    \"climate\": \"sunny\"\n  },\n  \"afternoon\": {\n    \"climate\": \"sunny\"\n  },\n  \"night\": {\n    \"climate\": \"clear\"\n  },\n  \"averageClimate\": \"sunny\"\n}",
+          "body": "{\n  \"data\": {\n    \"temperature\": {\n      \"max\": 35,\n      \"min\": 25\n    },\n    \"probabilityOfRain\": 10,\n    \"morning\": {\n      \"climate\": \"sunny\"\n    },\n    \"afternoon\": {\n      \"climate\": \"sunny\"\n    },\n    \"night\": {\n      \"climate\": \"sunny\"\n    },\n    \"averageClimate\": \"sunny\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -513,7 +513,7 @@
         },
         {
           "uuid": "ef2adef7-a4cc-4bb1-b0c5-154d5739984b",
-          "body": "{\n  \"temperature\": {\n    \"max\": 22,\n    \"min\": 15\n  },\n  \"probabilityOfRain\": 70,\n  \"morning\": {\n    \"climate\": \"cloudy\"\n  },\n  \"afternoon\": {\n    \"climate\": \"rainy\"\n  },\n  \"night\": {\n    \"climate\": \"cloudy\"\n  },\n  \"averageClimate\": \"cloudy\"\n}\n",
+          "body": "{\n  \"data\": {\n    \"temperature\": {\n      \"max\": 22,\n      \"min\": 15\n    },\n    \"probabilityOfRain\": 70,\n    \"morning\": {\n      \"climate\": \"cloudy\"\n    },\n    \"afternoon\": {\n      \"climate\": \"rainy\"\n    },\n    \"night\": {\n      \"climate\": \"cloudy\"\n    },\n    \"averageClimate\": \"cloudy\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",

@@ -1,0 +1,600 @@
+{
+  "uuid": "b18c1622-94f9-4ee7-9f1f-244b17a92338",
+  "lastMigration": 32,
+  "name": "ApiMock",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3333,
+  "hostname": "",
+  "folders": [
+    {
+      "uuid": "52a7110b-5402-4cd0-986f-60c76a5d8113",
+      "name": "news",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "9b246130-6474-4eca-9cd8-7fee7bc9ed54"
+        },
+        {
+          "type": "route",
+          "uuid": "0c199221-9135-47d2-8284-e5ce2ff52418"
+        }
+      ]
+    },
+    {
+      "uuid": "8c20af06-4f68-45eb-9e86-d92477decfa1",
+      "name": "ads",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "dfcefd4b-1a5b-427c-933e-739b184d4a3f"
+        }
+      ]
+    },
+    {
+      "uuid": "cc26db5c-a2fd-4177-94c3-35099ad5b987",
+      "name": "sponsors",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "16941c94-62d7-4deb-bd74-d244a0d1283f"
+        }
+      ]
+    },
+    {
+      "uuid": "a2b445b2-66b8-451c-9059-ceaacd57d314",
+      "name": "weather",
+      "children": [
+        {
+          "type": "route",
+          "uuid": "f9119d27-9a61-4732-872e-9dc95cfd15de"
+        }
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "uuid": "9b246130-6474-4eca-9cd8-7fee7bc9ed54",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/news/list",
+      "responses": [
+        {
+          "uuid": "b7bd0684-e8b3-4d99-af21-783401e6953c",
+          "body": "[\n  {\n    \"id\": 1,\n    \"title\": \"Explosão de Tecnologia: O Futuro das Cidades Inteligentes\",\n    \"author\": \"Luís Costa\",\n    \"date\": \"2024-11-13T10:30:00Z\",\n    \"shortContent\": \"As cidades inteligentes estão rapidamente se tornando uma realidade, com a integração de tecnologias como IA, IoT e big data para otimizar o tráfego, a segurança e os serviços públicos.\",\n    \"category\": \"Tecnologia\",\n    \"image\": \"https://images.unsplash.com/photo-1561401467-e1e746e02a6a\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"A Luta contra a Desigualdade: A Importância da Educação no Século XXI\",\n    \"author\": \"Carla Santos\",\n    \"date\": \"2024-11-12T16:45:00Z\",\n    \"shortContent\": \"A educação desempenha um papel fundamental na luta contra a desigualdade social, com organizações internacionais alertando para a necessidade de investir no ensino básico e médio.\",\n    \"category\": \"Sociedade\",\n    \"image\": \"https://images.unsplash.com/photo-1594209811772-2f6c6a62ab6a\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"Mudanças Climáticas: Impactos no Nosso Cotidiano e Como Agir\",\n    \"author\": \"Fernando Almeida\",\n    \"date\": \"2024-11-11T14:20:00Z\",\n    \"shortContent\": \"Com o aumento da temperatura global, os efeitos das mudanças climáticas já são evidentes no nosso cotidiano. Especialistas sugerem que é urgente a adoção de políticas públicas.\",\n    \"category\": \"Meio Ambiente\",\n    \"image\": \"https://images.unsplash.com/photo-1517714340563-c83b6e1e5f19\"\n  },\n  {\n    \"id\": 4,\n    \"title\": \"Desafios da Inteligência Artificial no Mercado de Trabalho\",\n    \"author\": \"Mariana Ribeiro\",\n    \"date\": \"2024-11-10T08:00:00Z\",\n    \"shortContent\": \"O impacto da inteligência artificial no mercado de trabalho é um tema crescente. Empresas começam a adaptar suas operações, enquanto muitos temem a substituição de empregos humanos.\",\n    \"category\": \"Tecnologia\",\n    \"image\": \"https://images.unsplash.com/photo-1563321373-c5ff9de1c706\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"A Crescente Ameaça dos Cyberataques: Como Proteger Seus Dados\",\n    \"author\": \"Roberto Souza\",\n    \"date\": \"2024-11-09T12:30:00Z\",\n    \"shortContent\": \"Com o aumento dos ataques cibernéticos, tanto empresas quanto indivíduos precisam tomar medidas para proteger suas informações e evitar perdas financeiras e de dados sensíveis.\",\n    \"category\": \"Segurança Digital\",\n    \"image\": \"https://images.unsplash.com/photo-1603968125103-6cc0198b39b7\"\n  },\n  {\n    \"id\": 6,\n    \"title\": \"O Impacto da Energia Renovável na Economia Global\",\n    \"author\": \"Gabriela Pinto\",\n    \"date\": \"2024-11-08T18:15:00Z\",\n    \"shortContent\": \"A transição para fontes de energia renováveis está transformando a economia mundial. A demanda por tecnologias verdes cresce, criando novas oportunidades e desafios econômicos.\",\n    \"category\": \"Economia\",\n    \"image\": \"https://images.unsplash.com/photo-1604075065818-fb719e4f94a7\"\n  },\n  {\n    \"id\": 7,\n    \"title\": \"A Revolução dos Carros Autônomos: O Futuro da Mobilidade\",\n    \"author\": \"Lucas Martins\",\n    \"date\": \"2024-11-07T09:45:00Z\",\n    \"shortContent\": \"Os carros autônomos estão moldando o futuro da mobilidade urbana, com potencial para reduzir acidentes e melhorar o trânsito. No entanto, também levantam questões sobre segurança e regulamentação.\",\n    \"category\": \"Tecnologia\",\n    \"image\": \"https://images.unsplash.com/photo-1570295999911-7c9ebddab7bc\"\n  },\n  {\n    \"id\": 8,\n    \"title\": \"A Importância da Preservação dos Oceanos para o Futuro do Planeta\",\n    \"author\": \"Carlos Lima\",\n    \"date\": \"2024-11-06T14:00:00Z\",\n    \"shortContent\": \"A preservação dos oceanos é crucial para a saúde do planeta, pois eles regulam o clima e abrigam uma biodiversidade única. Iniciativas de proteção estão sendo implementadas ao redor do mundo.\",\n    \"category\": \"Meio Ambiente\",\n    \"image\": \"https://images.unsplash.com/photo-1506970799177-6a91f035f8a7\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "0c199221-9135-47d2-8284-e5ce2ff52418",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/news/:id",
+      "responses": [
+        {
+          "uuid": "c4270b19-71b3-4fe0-a7b8-84c77110667b",
+          "body": "{\n  \"id\": 1,\n  \"title\": \"Explosão de Tecnologia: O Futuro das Cidades Inteligentes\",\n  \"author\": \"Luís Costa\",\n  \"date\": \"2024-11-13T10:30:00Z\",\n  \"content\": \"As cidades inteligentes estão rapidamente se tornando uma realidade, com a integração de tecnologias como Inteligência Artificial (IA), Internet das Coisas (IoT) e Big Data. Essas inovações buscam otimizar o tráfego, melhorar a segurança pública e tornar os serviços urbanos mais eficientes. Sistemas de monitoramento preditivo poderão antecipar crises, desde falhas nos sistemas de água até acidentes de trânsito. No futuro, espera-se que as cidades inteligentes melhorem a qualidade de vida e ofereçam soluções para os problemas urbanos mais desafiadores.\",\n  \"category\": \"Tecnologia\",\n  \"image\": \"https://images.unsplash.com/photo-1561401467-e1e746e02a6a\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"O Impacto das Cidades Inteligentes na Mobilidade Urbana\",\n      \"url\": \"https://www.exemplo.com/mobilidade-urbana\"\n    },\n    {\n      \"title\": \"Como a IA Está Transformando as Cidades de Hoje\",\n      \"url\": \"https://www.exemplo.com/ia-cidades\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "1",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "a5b8a397-4839-4faa-a5ad-7e81aeead92a",
+          "body": "{\n  \"id\": 2,\n  \"title\": \"A Luta contra a Desigualdade: A Importância da Educação no Século XXI\",\n  \"author\": \"Carla Santos\",\n  \"date\": \"2024-11-12T16:45:00Z\",\n  \"content\": \"A educação desempenha um papel fundamental na luta contra a desigualdade social, com organizações internacionais alertando para a necessidade de investir no ensino básico e médio. Nos últimos anos, a falta de acesso à educação de qualidade tem sido uma das principais barreiras para o crescimento econômico e social. A redução das desigualdades começa com políticas públicas que garantam educação de qualidade para todos, independentemente de sua origem ou classe social.\",\n  \"category\": \"Sociedade\",\n  \"image\": \"https://images.unsplash.com/photo-1594209811772-2f6c6a62ab6a\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"Como a Educação Pode Reduzir a Desigualdade Social\",\n      \"url\": \"https://www.exemplo.com/educacao-desigualdade\"\n    },\n    {\n      \"title\": \"Investindo na Educação Básica: O Futuro da Sociedade\",\n      \"url\": \"https://www.exemplo.com/educacao-basica\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "2",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "d22709af-2467-44c6-acaa-4b0bbae64f72",
+          "body": "{\n  \"id\": 3,\n  \"title\": \"Mudanças Climáticas: Impactos no Nosso Cotidiano e Como Agir\",\n  \"author\": \"Fernando Almeida\",\n  \"date\": \"2024-11-11T14:20:00Z\",\n  \"content\": \"Com o aumento da temperatura global, os efeitos das mudanças climáticas já são evidentes no nosso cotidiano. O aumento das temperaturas tem causado secas prolongadas, inundações repentinas e ondas de calor mais intensas. Especialistas afirmam que é urgente a adoção de políticas públicas que promovam o uso de energias renováveis, a preservação dos ecossistemas e a conscientização da população. A luta contra as mudanças climáticas é uma responsabilidade global, e ações concretas devem ser implementadas imediatamente.\",\n  \"category\": \"Meio Ambiente\",\n  \"image\": \"https://images.unsplash.com/photo-1517714340563-c83b6e1e5f19\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"Como a Mudança Climática Está Afetando o Planeta\",\n      \"url\": \"https://www.exemplo.com/mudanca-climatica\"\n    },\n    {\n      \"title\": \"Energias Renováveis: O Futuro da Sustentabilidade\",\n      \"url\": \"https://www.exemplo.com/energias-renovaveis\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "3",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "99583747-d7a5-4e1b-9b89-b43e47e42135",
+          "body": "{\n  \"id\": 4,\n  \"title\": \"Desafios da Inteligência Artificial no Mercado de Trabalho\",\n  \"author\": \"Mariana Ribeiro\",\n  \"date\": \"2024-11-10T08:00:00Z\",\n  \"content\": \"O impacto da inteligência artificial no mercado de trabalho é um tema crescente. Empresas estão adaptando suas operações, enquanto muitos profissionais temem a substituição de empregos humanos por máquinas. A IA está transformando diversas indústrias, desde a automação de processos até a análise de dados em larga escala. Para mitigar os impactos, especialistas recomendam a capacitação contínua dos trabalhadores para novas habilidades que serão essenciais no futuro.\",\n  \"category\": \"Tecnologia\",\n  \"image\": \"https://images.unsplash.com/photo-1563321373-c5ff9de1c706\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"Como a IA Está Transformando o Mercado de Trabalho\",\n      \"url\": \"https://www.exemplo.com/ia-no-mercado-de-trabalho\"\n    },\n    {\n      \"title\": \"Capacitação Profissional: O Caminho para o Futuro do Trabalho\",\n      \"url\": \"https://www.exemplo.com/capacitacao-profissional\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "4",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "73bcb9e1-f2f1-4b9e-9674-d0f381e4e159",
+          "body": "{\n  \"id\": 5,\n  \"title\": \"A Crescente Ameaça dos Cyberataques: Como Proteger Seus Dados\",\n  \"author\": \"Roberto Souza\",\n  \"date\": \"2024-11-09T12:30:00Z\",\n  \"content\": \"Com o aumento dos ataques cibernéticos, tanto empresas quanto indivíduos precisam tomar medidas para proteger suas informações e evitar perdas financeiras e de dados sensíveis. De ransomware a ataques de phishing, a ameaça digital nunca foi tão real. A segurança cibernética tornou-se uma prioridade global, com especialistas recomendando o uso de senhas fortes, autenticação de dois fatores e a educação contínua sobre as ameaças online.\",\n  \"category\": \"Segurança Digital\",\n  \"image\": \"https://images.unsplash.com/photo-1603968125103-6cc0198b39b7\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"Como Proteger Seus Dados de Cyberataques\",\n      \"url\": \"https://www.exemplo.com/proteger-dados-cyberataques\"\n    },\n    {\n      \"title\": \"Ransomware: Como Evitar Ser Vítima\",\n      \"url\": \"https://www.exemplo.com/ransomware-como-evitar\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "5",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "f9037c10-0652-407d-bb4a-910e9e2c4499",
+          "body": "{\n  \"id\": 6,\n  \"title\": \"O Impacto da Energia Renovável na Economia Global\",\n  \"author\": \"Gabriela Pinto\",\n  \"date\": \"2024-11-08T18:15:00Z\",\n  \"content\": \"A transição para fontes de energia renováveis está transformando a economia mundial. A demanda por tecnologias verdes está crescendo, criando novas oportunidades e desafios econômicos. Com o aumento da conscientização sobre as mudanças climáticas, os governos estão incentivando investimentos em energia solar, eólica e outras fontes sustentáveis. As empresas estão adotando práticas mais ecológicas, e a energia renovável tornou-se uma parte crucial do futuro energético global.\",\n  \"category\": \"Economia\",\n  \"image\": \"https://images.unsplash.com/photo-1604075065818-fb719e4f94a7\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"Energias Renováveis: O Futuro da Economia Sustentável\",\n      \"url\": \"https://www.exemplo.com/energias-renovaveis-futuro\"\n    },\n    {\n      \"title\": \"Como as Energias Verdes Estão Transformando a Economia Global\",\n      \"url\": \"https://www.exemplo.com/energias-verdes-transformando-economia\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "6",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "56db5261-6316-493f-a826-5c64f4471ce5",
+          "body": "{\n  \"id\": 7,\n  \"title\": \"A Revolução dos Carros Autônomos: O Futuro da Mobilidade\",\n  \"author\": \"Lucas Martins\",\n  \"date\": \"2024-11-07T09:45:00Z\",\n  \"content\": \"Os carros autônomos estão moldando o futuro da mobilidade urbana. Com a promessa de reduzir acidentes, melhorar o tráfego e aumentar a eficiência no transporte, os veículos autônomos têm o potencial de revolucionar a maneira como nos deslocamos. No entanto, o processo de regulamentação e adoção dessas tecnologias é complexo, e questões como segurança, ética e impacto no emprego são temas de debate constante.\",\n  \"category\": \"Tecnologia\",\n  \"image\": \"https://images.unsplash.com/photo-1570295999911-7c9ebddab7bc\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"Carros Autônomos: O Que Esperar no Futuro\",\n      \"url\": \"https://www.exemplo.com/carros-autonomos-futuro\"\n    },\n    {\n      \"title\": \"Desafios e Oportunidades dos Carros Sem Motorista\",\n      \"url\": \"https://www.exemplo.com/desafios-carros-autonomos\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "7",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "664eefbd-3344-4034-9ee8-c76baafa25a8",
+          "body": "{\n  \"id\": 8,\n  \"title\": \"A Importância da Preservação dos Oceanos para o Futuro do Planeta\",\n  \"author\": \"Carlos Lima\",\n  \"date\": \"2024-11-06T14:00:00Z\",\n  \"content\": \"A preservação dos oceanos é crucial para a saúde do planeta. Eles desempenham um papel fundamental na regulação do clima e abrigam uma biodiversidade única. Nos últimos anos, a poluição marinha tem causado danos irreparáveis, com grandes quantidades de plásticos e outros resíduos se acumulando nas águas. Organizações ambientais e governos ao redor do mundo estão intensificando os esforços para reduzir a poluição e proteger os ecossistemas marinhos.\",\n  \"category\": \"Meio Ambiente\",\n  \"image\": \"https://images.unsplash.com/photo-1506970799177-6a91f035f8a7\",\n  \"relatedLinks\": [\n    {\n      \"title\": \"A Ameaça da Poluição Marinha e Como Combatê-la\",\n      \"url\": \"https://www.exemplo.com/poluicao-marinha\"\n    },\n    {\n      \"title\": \"Iniciativas para a Preservação dos Oceanos\",\n      \"url\": \"https://www.exemplo.com/preservacao-oceanos\"\n    }\n  ]\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": " (copy)",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "params",
+              "modifier": "id",
+              "value": "8",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "16941c94-62d7-4deb-bd74-d244a0d1283f",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/sponsor",
+      "responses": [
+        {
+          "uuid": "d3370bf4-e406-4411-93d5-d370ff9607cc",
+          "body": "{\n  \"id\": 1,\n  \"title\": \"TechCorp\",\n  \"description\": \"A TechCorp é uma líder global em soluções tecnológicas inovadoras.\",\n  \"image\": \"https://example.com/images/techcorp-logo.png\",\n  \"url\": \"https://www.techcorp.com\"\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "4653a9a2-5adf-4768-85c9-22ff6b9d488f",
+          "body": "{\n  \"id\": 2,\n  \"title\": \"GreenEnergy\",\n  \"description\": \"A GreenEnergy está comprometida com soluções sustentáveis de energia renovável, trazendo inovação para o setor energético.\",\n  \"image\": \"https://example.com/images/greenenergy-logo.png\",\n  \"url\": \"https://www.greenenergy.com\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "3ba571bb-0a7b-4461-83aa-2c50c4399a05",
+          "body": "{\n  \"id\": 3,\n  \"title\": \"FashionWorld\",\n  \"description\": \"A FashionWorld é uma das maiores marcas globais de moda, conhecida por suas coleções elegantes e sustentáveis.\",\n  \"image\": \"https://example.com/images/fashionworld-logo.png\",\n  \"url\": \"https://www.fashionworld.com\"\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "RANDOM"
+    },
+    {
+      "uuid": "dfcefd4b-1a5b-427c-933e-739b184d4a3f",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/ads",
+      "responses": [
+        {
+          "uuid": "9ba001f5-1198-49a8-8c8e-656dacb734c6",
+          "body": "{\n  \"id\": 1,\n  \"title\": \"Guarda-chuva Compacto\",\n  \"description\": \"Não se molhe mais com nosso guarda-chuva compacto e resistente.\",\n  \"image\": \"https://example.com/images/umbrella-ad.png\",\n  \"url\": \"https://www.store.com/umbrella\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "weather",
+              "value": "rainy",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "4af60a51-e911-4224-88ca-038ae158bd96",
+          "body": "{\n  \"id\": 2,\n  \"title\": \"Protetor Solar Ultra\",\n  \"description\": \"Proteja sua pele enquanto aproveita o sol com nosso protetor solar de alta proteção.\",\n  \"image\": \"https://example.com/images/sunscreen-ad.png\",\n  \"url\": \"https://www.store.com/sunscreen\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "weather",
+              "value": "sunny",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "e7bf8baf-ea2d-4639-ac22-21036faff2ec",
+          "body": "{\n  \"id\": 3,\n  \"title\": \"Camisetas Comfort\",\n  \"description\": \"Perfeitas para um dia nublado, nossas camisetas confortáveis são ideais para qualquer ocasião.\",\n  \"image\": \"https://example.com/images/t-shirt-ad.png\",\n  \"url\": \"https://www.store.com/t-shirt\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "weather",
+              "value": "cloudy",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "f9119d27-9a61-4732-872e-9dc95cfd15de",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/weather",
+      "responses": [
+        {
+          "uuid": "b4f81a2f-27ad-419f-bd4c-f6f49e7d9aa7",
+          "body": "{\n  \"temperature\": {\n    \"max\": 18,\n    \"min\": 12\n  },\n  \"probabilityOfRain\": 60,\n  \"morning\": {\n    \"climate\": \"sunny\"\n  },\n  \"afternoon\": {\n    \"climate\": \"cloudy\"\n  },\n  \"night\": {\n    \"climate\": \"rainy\"\n  },\n  \"averageClimate\": \"cloudy\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ee105253-1616-4266-908b-6b73d7146521",
+          "body": "{\n  \"temperature\": {\n    \"max\": 35,\n    \"min\": 25\n  },\n  \"probabilityOfRain\": 10,\n  \"morning\": {\n    \"climate\": \"sunny\"\n  },\n  \"afternoon\": {\n    \"climate\": \"sunny\"\n  },\n  \"night\": {\n    \"climate\": \"clear\"\n  },\n  \"averageClimate\": \"sunny\"\n}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "ef2adef7-a4cc-4bb1-b0c5-154d5739984b",
+          "body": "{\n  \"temperature\": {\n    \"max\": 22,\n    \"min\": 15\n  },\n  \"probabilityOfRain\": 70,\n  \"morning\": {\n    \"climate\": \"cloudy\"\n  },\n  \"afternoon\": {\n    \"climate\": \"rainy\"\n  },\n  \"night\": {\n    \"climate\": \"cloudy\"\n  },\n  \"averageClimate\": \"cloudy\"\n}\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "RANDOM"
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "folder",
+      "uuid": "52a7110b-5402-4cd0-986f-60c76a5d8113"
+    },
+    {
+      "type": "folder",
+      "uuid": "cc26db5c-a2fd-4177-94c3-35099ad5b987"
+    },
+    {
+      "type": "folder",
+      "uuid": "a2b445b2-66b8-451c-9059-ceaacd57d314"
+    },
+    {
+      "type": "folder",
+      "uuid": "8c20af06-4f68-45eb-9e86-d92477decfa1"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

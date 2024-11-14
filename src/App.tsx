@@ -5,29 +5,14 @@ import { Footer } from './components/Footer'
 import { ScrollButton } from './components/ScrollButton'
 
 const News = React.lazy(() => import('news/News'))
-const Ads = React.lazy(() => import('ads/Ads'))
-const Sponsors = React.lazy(() => import('sponsors/Sponsors'))
-const Weather = React.lazy(() => import('weather/Weather'))
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col gap-14">
       <Header />
 
       <Suspense fallback={<div>Loading...</div>}>
         <News />
-      </Suspense>
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <Sponsors />
-      </Suspense>
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <Ads />
-      </Suspense>
-
-      <Suspense fallback={<div>Loading...</div>}>
-        <Weather />
       </Suspense>
 
       <ScrollButton />

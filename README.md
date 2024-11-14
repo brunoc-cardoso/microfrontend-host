@@ -65,3 +65,5 @@ Optei por tecnologias que equilibram velocidade de entrega com familiaridade e q
 - Implementação de autenticação.
 - Otimizações de desempenho.
 - Tratativas de erros, tanto para api, quanto para o carregamento dos módulos
+- Melhoria na tratativa das imagens e responsividade do app como um todo
+- Acessibilidade

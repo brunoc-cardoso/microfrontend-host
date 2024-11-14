@@ -1,6 +1,6 @@
 {
   "uuid": "b18c1622-94f9-4ee7-9f1f-244b17a92338",
-  "lastMigration": 32,
+  "lastMigration": 33,
   "name": "ApiMock",
   "endpointPrefix": "",
   "latency": 0,
@@ -80,7 +80,9 @@
           "callbacks": []
         }
       ],
-      "responseMode": null
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     },
     {
       "uuid": "0c199221-9135-47d2-8284-e5ce2ff52418",
@@ -306,7 +308,9 @@
           "callbacks": []
         }
       ],
-      "responseMode": null
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     },
     {
       "uuid": "16941c94-62d7-4deb-bd74-d244a0d1283f",
@@ -317,7 +321,7 @@
       "responses": [
         {
           "uuid": "d3370bf4-e406-4411-93d5-d370ff9607cc",
-          "body": "{\n  \"id\": 1,\n  \"title\": \"TechCorp\",\n  \"description\": \"A TechCorp é uma líder global em soluções tecnológicas inovadoras.\",\n  \"image\": \"https://example.com/images/techcorp-logo.png\",\n  \"url\": \"https://www.techcorp.com\"\n}\n",
+          "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"title\": \"TechCorp\",\n    \"description\": \"A TechCorp é uma líder global em soluções tecnológicas inovadoras.\",\n    \"image\": \"https://www.meioemensagem.com.br/wp-content/uploads/2020/01/CC_GV_banner_site_768x1365_VERT_01_A_v30.jpg\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -336,7 +340,7 @@
         },
         {
           "uuid": "4653a9a2-5adf-4768-85c9-22ff6b9d488f",
-          "body": "{\n  \"id\": 2,\n  \"title\": \"GreenEnergy\",\n  \"description\": \"A GreenEnergy está comprometida com soluções sustentáveis de energia renovável, trazendo inovação para o setor energético.\",\n  \"image\": \"https://example.com/images/greenenergy-logo.png\",\n  \"url\": \"https://www.greenenergy.com\"\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 2,\n    \"title\": \"GreenEnergy\",\n    \"description\": \"A GreenEnergy está comprometida com soluções sustentáveis de energia renovável, trazendo inovação para o setor energético.\",\n    \"image\": \"https://www.universodorock.com/wp-content/uploads/2020/10/rir2021-2.jpg\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -355,7 +359,7 @@
         },
         {
           "uuid": "3ba571bb-0a7b-4461-83aa-2c50c4399a05",
-          "body": "{\n  \"id\": 3,\n  \"title\": \"FashionWorld\",\n  \"description\": \"A FashionWorld é uma das maiores marcas globais de moda, conhecida por suas coleções elegantes e sustentáveis.\",\n  \"image\": \"https://example.com/images/fashionworld-logo.png\",\n  \"url\": \"https://www.fashionworld.com\"\n}\n",
+          "body": "{\n  \"data\": {\n    \"id\": 3,\n    \"title\": \"FashionWorld\",\n    \"description\": \"A FashionWorld é uma das maiores marcas globais de moda, conhecida por suas coleções elegantes e sustentáveis.\",\n    \"image\": \"https://i.pinimg.com/originals/e5/f4/40/e5f440c9fd27b2436ee44c17b87904fc.jpg\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -373,7 +377,9 @@
           "callbacks": []
         }
       ],
-      "responseMode": "RANDOM"
+      "responseMode": "RANDOM",
+      "streamingMode": null,
+      "streamingInterval": 0
     },
     {
       "uuid": "dfcefd4b-1a5b-427c-933e-739b184d4a3f",
@@ -384,7 +390,7 @@
       "responses": [
         {
           "uuid": "9ba001f5-1198-49a8-8c8e-656dacb734c6",
-          "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"title\": \"Guarda-chuva Compacto\",\n    \"description\": \"Não se molhe mais com nosso guarda-chuva compacto e resistente.\",\n    \"image\": \"https://example.com/images/umbrella-ad.png\",\n    \"url\": \"https://www.store.com/umbrella\"\n  }\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 1,\n    \"title\": \"Guarda-chuva Compacto\",\n    \"description\": \"Não se molhe mais com nosso guarda-chuva compacto e resistente.\",\n    \"image\": \"https://www.prietobrindes.com.br/img/postimagem/pi32-GUARDA-CHUVAS_BANNER.jpg\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -411,7 +417,7 @@
         },
         {
           "uuid": "4af60a51-e911-4224-88ca-038ae158bd96",
-          "body": "{\n  \"data\": {\n    \"id\": 2,\n    \"title\": \"Protetor Solar Ultra\",\n    \"description\": \"Proteja sua pele enquanto aproveita o sol com nosso protetor solar de alta proteção.\",\n    \"image\": \"https://example.com/images/sunscreen-ad.png\",\n    \"url\": \"https://www.store.com/sunscreen\"\n  }\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 2,\n    \"title\": \"Protetor Solar Ultra\",\n    \"description\": \"Proteja sua pele enquanto aproveita o sol com nosso protetor solar de alta proteção.\",\n    \"image\": \"https://content.syndigo.com/asset/08e5d9ad-9c12-40cc-877a-1a2b88d15974/1464.jpeg\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -438,7 +444,7 @@
         },
         {
           "uuid": "e7bf8baf-ea2d-4639-ac22-21036faff2ec",
-          "body": "{\n  \"data\": {\n    \"id\": 3,\n    \"title\": \"Camisetas Comfort\",\n    \"description\": \"Perfeitas para um dia nublado, nossas camisetas confortáveis são ideais para qualquer ocasião.\",\n    \"image\": \"https://example.com/images/t-shirt-ad.png\",\n    \"url\": \"https://www.store.com/t-shirt\"\n  }\n}",
+          "body": "{\n  \"data\": {\n    \"id\": 3,\n    \"title\": \"Camisetas Comfort\",\n    \"description\": \"Perfeitas para um dia nublado, nossas camisetas confortáveis são ideais para qualquer ocasião.\",\n    \"image\": \"https://blog.supermercadoledur.com.br/wp-content/uploads/2022/06/16-750x410.png\"\n  }\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
@@ -464,7 +470,9 @@
           "callbacks": []
         }
       ],
-      "responseMode": null
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
     },
     {
       "uuid": "f9119d27-9a61-4732-872e-9dc95cfd15de",
@@ -531,7 +539,9 @@
           "callbacks": []
         }
       ],
-      "responseMode": "RANDOM"
+      "responseMode": "RANDOM",
+      "streamingMode": null,
+      "streamingInterval": 0
     }
   ],
   "rootChildren": [
